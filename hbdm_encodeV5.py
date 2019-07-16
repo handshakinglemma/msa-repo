@@ -24,7 +24,7 @@ def get_chunk_info(commonFile): #function to read the chunks out of the file
         raise("TOO MANY CHUNKS CANNOT REPRESENT IN 3 BYTES")
     return chunk_dict
 
-def encode(inputFile, outputFile, commonFile, windowSize, polynomial): #commonFile is the file where the chunks are store
+def encode(inputFile, outputFile, commonFile, windowSize=3, polynomial=283): #commonFile is the file where the chunks are store
     # common_chunk_dict, common_chunk_nums = get_chunk_info(commonFile)
     common_chunk_dict = get_chunk_info(commonFile) #runs get_chunk_info to get a dictionary of chunks and hashes, common_chunk_dict[hash] = chunk
     org_chunk_dict, org_chunk_lst = chunk(inputFile, windowSize, polynomial) #converts input file into chunks. org_chunk_dict contains unique chunks, addressed as their hashes

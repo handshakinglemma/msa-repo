@@ -12,7 +12,7 @@ import time
 #Note that this function considers chunk hashes to be tuples of a byte ojects and integers in the form (hash, length)
 #where hash is a byte object and length is an int. Other programs such as hbdm_encode and decode considers hashes to just
 #be byte objects where the first 20 bytes is the hash and the last 3 are the length.
-def chunk(fileName = None, windowSize = 3, polynomial = 183, data = None):
+def chunk(fileName = None, windowSize = 3, polynomial = 283, data = None):
     cutValue = 0
     fingerprinter = byteWindowFingerprinter3(polynomial, windowSize)
     if fileName != None:
