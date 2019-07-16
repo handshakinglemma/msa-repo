@@ -22,7 +22,7 @@ def chunk(fileName = None, windowSize = 3, polynomial = 283, data = None):
                    #outputted to encoded file
     length = 0
     hasher = hashlib.sha1()
-    chunk = bytearray(b'')
+    chunk = bytearray()
     for byte in data:
         length += 1
         fingerprint = fingerprinter.update(byte)
@@ -41,7 +41,7 @@ def chunk(fileName = None, windowSize = 3, polynomial = 283, data = None):
                 print(chunk)
             hasher = hashlib.sha1()
             length = 0
-            chunk = bytearray(b'')
+            chunk = bytearray()
 
     hash = hasher.digest()
     pair = (hash, length)
