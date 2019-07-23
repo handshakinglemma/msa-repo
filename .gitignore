@@ -6,3 +6,6 @@ ChunkDB
 *.data
 makefile
 fastlsa.c
+ChunksDB
+SequenceDB
+workingsequence
