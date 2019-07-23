@@ -53,6 +53,6 @@ if __name__ == "__main__":
         for fileName in os.listdir(input):
             print(fileName)
             if "encoded" not in fileName and "decoded" not in fileName and "desktop.ini" not in fileName:
-                encode(os.getcwd() + "\\" + input + "\\" + fileName, os.getcwd() + "\\" + input + "\\" + fileName +  ".encoded", sys.argv[2], maskSize)
+                encode(os.getcwd() + "/" + input + "/" + fileName, os.getcwd() + "/" + input + "/" + fileName +  ".encoded", sys.argv[2], maskSize)
     else:
         encode(input, input + ".encoded", sys.argv[2])

@@ -5,8 +5,15 @@ from chunk_fileV3_1 import chunk
 
 # https://rosettacode.org/wiki/Longest_common_subsequence#Python on 19/07/08
 
-def lcs(a, b):
+# TODO: Should probably break this up into two functions: the LCS function
+# and a wrapper function to call in other programs.
+def lcs(file1, file2):
+
+    a = read_encoded(file1)
+    b = read_encoded(file2)
+
     # generate matrix of length of longest common subsequence for substrings of both words
+    t1 = time.time()
     lengths = [[0] * (len(b)+1) for _ in range(len(a)+1)]
     for i, x in enumerate(a):
         for j, y in enumerate(b):
@@ -22,6 +29,11 @@ def lcs(a, b):
         if lengths[i][j] != lengths[i-1][j]:
             result.append(a[i-1])
 
+    write_file('lcs.data.encoded', result)
+
+    t2 = time.time()
+    log_time(file1, file2, t2 - t1)
+
     return result
 
 def read_file(filename):
@@ -31,10 +43,9 @@ def read_file(filename):
     return str(content)
 
 def write_file(filename, content):
-    file = open(filename, 'wb')
+    file = open(filename, 'ab')
 
     for pair in content:
-        #bytePair = pair[0] + pair[1].to_bytes(3, 'big')
         file.write(pair)
 
     file.close()
@@ -52,38 +63,12 @@ def make_list(strx):
         new.append(item[0])
     return new
 
+def log_time(file1, file2, time):
+    with open('timelog.txt', 'a') as timelog:
+        timelog.write(file1 + ' ' + file2 + ': ' + str(time) + '\n')
 
 def main():
-    str1 = read_encoded(sys.argv[1])
-    str2 = read_encoded(sys.argv[2])
-    #trash1, str1 = chunk(sys.argv[1])
-    #rash2, str2 = chunk(sys.argv[2])
-    #str1 = make_list(str1)
-    #str2 = make_list(str2)
-    #print(str1)
-    #print()
-    #print('***')
-    #print()
-    #print(str2)
-    #print()
-    #print('***')
-    #print()
-    t1 = time.time()
-    result = lcs(str1, str2)
-    write_file('lcs.data.encoded', result)
-    #print(result)
-    t2 = time.time()
-    print('Time:', t2 - t1)
+    lcs(sys.argv[1], sys.argv[2])
 
-    '''
-    print()
-    print('***')
-    print()
-
-    new = bytearray()
-    for i in str1:
-        new += i
-    print(new)
-    '''
-
-main()
+if __name__ == "__main__":
+    main()

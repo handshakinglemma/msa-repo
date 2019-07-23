@@ -1,0 +1,128 @@
+files/adult2.data.encoded files/adult5.data.encoded: 2.1125130653381348
+files/adult2.data.encoded files/adult.data.encoded: 2.5663957595825195
+files/adult2.data.encoded files/adult4.data.encoded: 2.2197701930999756
+files/adult2.data.encoded files/adult3.data.encoded: 2.2200303077697754
+files/adult5.data.encoded files/adult2.data.encoded: 2.269587993621826
+files/adult5.data.encoded files/adult.data.encoded: 2.3137080669403076
+files/adult5.data.encoded files/adult4.data.encoded: 2.317045211791992
+files/adult5.data.encoded files/adult3.data.encoded: 2.3663840293884277
+files/adult.data.encoded files/adult2.data.encoded: 2.3648719787597656
+files/adult.data.encoded files/adult5.data.encoded: 2.3696000576019287
+files/adult.data.encoded files/adult4.data.encoded: 2.4558939933776855
+files/adult.data.encoded files/adult3.data.encoded: 2.3662729263305664
+files/adult4.data.encoded files/adult2.data.encoded: 2.4291799068450928
+files/adult4.data.encoded files/adult5.data.encoded: 2.4691829681396484
+files/adult4.data.encoded files/adult.data.encoded: 2.451350212097168
+files/adult4.data.encoded files/adult3.data.encoded: 2.449984073638916
+files/adult3.data.encoded files/adult2.data.encoded: 2.4598138332366943
+files/adult3.data.encoded files/adult5.data.encoded: 2.4343979358673096
+files/adult3.data.encoded files/adult.data.encoded: 2.4774529933929443
+files/adult3.data.encoded files/adult4.data.encoded: 2.45798397064209
+
+Total time: 47.76921582221985
+-----------------------------------------------------------------------
+files/adult2.data.encoded files/adult5.data.encoded: 2.000483989715576
+files/adult2.data.encoded files/adult.data.encoded: 2.11286997795105
+files/adult2.data.encoded files/adult4.data.encoded: 2.1504290103912354
+files/adult2.data.encoded files/adult3.data.encoded: 2.3393468856811523
+files/adult5.data.encoded files/adult2.data.encoded: 2.1009480953216553
+files/adult5.data.encoded files/adult.data.encoded: 2.0909829139709473
+files/adult5.data.encoded files/adult4.data.encoded: 2.1213769912719727
+files/adult5.data.encoded files/adult3.data.encoded: 2.1515398025512695
+files/adult.data.encoded files/adult2.data.encoded: 2.1189887523651123
+files/adult.data.encoded files/adult5.data.encoded: 2.1397950649261475
+files/adult.data.encoded files/adult4.data.encoded: 2.1474390029907227
+files/adult.data.encoded files/adult3.data.encoded: 2.2316977977752686
+files/adult4.data.encoded files/adult2.data.encoded: 2.216956853866577
+files/adult4.data.encoded files/adult5.data.encoded: 2.234778881072998
+files/adult4.data.encoded files/adult.data.encoded: 2.3459889888763428
+files/adult4.data.encoded files/adult3.data.encoded: 2.3432059288024902
+files/adult3.data.encoded files/adult2.data.encoded: 2.659714937210083
+files/adult3.data.encoded files/adult5.data.encoded: 2.433399200439453
+files/adult3.data.encoded files/adult.data.encoded: 2.5437350273132324
+files/adult3.data.encoded files/adult4.data.encoded: 2.6069839000701904
+
+Total time: 45.28903293609619
+-----------------------------------------------------------------------
+files/adult2.data.encoded files/adult5.data.encoded: 1.8896479606628418
+files/adult2.data.encoded files/adult.data.encoded: 1.8671891689300537
+files/adult2.data.encoded files/adult4.data.encoded: 1.9298498630523682
+files/adult2.data.encoded files/adult3.data.encoded: 1.9235808849334717
+files/adult5.data.encoded files/adult2.data.encoded: 1.9289369583129883
+files/adult5.data.encoded files/adult.data.encoded: 1.9500360488891602
+files/adult5.data.encoded files/adult4.data.encoded: 1.9366028308868408
+files/adult5.data.encoded files/adult3.data.encoded: 1.9161467552185059
+files/adult.data.encoded files/adult2.data.encoded: 1.9237010478973389
+files/adult.data.encoded files/adult5.data.encoded: 1.937518835067749
+files/adult.data.encoded files/adult4.data.encoded: 1.924872875213623
+files/adult.data.encoded files/adult3.data.encoded: 1.9580562114715576
+files/adult4.data.encoded files/adult2.data.encoded: 1.9320659637451172
+files/adult4.data.encoded files/adult5.data.encoded: 1.9577782154083252
+files/adult4.data.encoded files/adult.data.encoded: 2.050497055053711
+files/adult4.data.encoded files/adult3.data.encoded: 2.182368040084839
+files/adult3.data.encoded files/adult2.data.encoded: 2.065397024154663
+files/adult3.data.encoded files/adult5.data.encoded: 2.155729055404663
+files/adult3.data.encoded files/adult.data.encoded: 2.152761936187744
+files/adult3.data.encoded files/adult4.data.encoded: 2.188415050506592
+
+Total time: 39.94744610786438
+-----------------------------------------------------------------------
+files/adult2.data.encoded files/adult5.data.encoded: 1.9864981174468994
+files/adult2.data.encoded files/adult.data.encoded: 2.1994271278381348
+files/adult2.data.encoded files/adult4.data.encoded: 2.111259937286377
+files/adult2.data.encoded files/adult3.data.encoded: 2.0691840648651123
+files/adult5.data.encoded files/adult2.data.encoded: 2.063821792602539
+files/adult5.data.encoded files/adult.data.encoded: 2.074202060699463
+files/adult5.data.encoded files/adult4.data.encoded: 2.084855079650879
+files/adult5.data.encoded files/adult3.data.encoded: 2.1307201385498047
+files/adult.data.encoded files/adult2.data.encoded: 2.026937961578369
+files/adult.data.encoded files/adult5.data.encoded: 2.071528196334839
+files/adult.data.encoded files/adult4.data.encoded: 2.050704002380371
+files/adult.data.encoded files/adult3.data.encoded: 2.1965770721435547
+files/adult4.data.encoded files/adult2.data.encoded: 1.9811389446258545
+files/adult4.data.encoded files/adult5.data.encoded: 2.0845539569854736
+files/adult4.data.encoded files/adult.data.encoded: 2.092607259750366
+files/adult4.data.encoded files/adult3.data.encoded: 2.1180238723754883
+files/adult3.data.encoded files/adult2.data.encoded: 2.0320868492126465
+files/adult3.data.encoded files/adult5.data.encoded: 2.0828187465667725
+files/adult3.data.encoded files/adult.data.encoded: 2.28310227394104
+files/adult3.data.encoded files/adult4.data.encoded: 2.277360200881958
+
+Total time: 42.190083742141724
+-----------------------------------------------------------------------
+files/adult2.data.encoded files/adult5.data.encoded: 1.9047877788543701
+files/adult2.data.encoded files/adult.data.encoded: 1.9961450099945068
+files/adult2.data.encoded files/adult4.data.encoded: 2.16007924079895
+files/adult2.data.encoded files/adult3.data.encoded: 2.1833159923553467
+files/adult5.data.encoded files/adult.data.encoded: 2.168720245361328
+files/adult5.data.encoded files/adult4.data.encoded: 2.170305013656616
+files/adult5.data.encoded files/adult3.data.encoded: 2.1493380069732666
+files/adult.data.encoded files/adult4.data.encoded: 2.165220022201538
+files/adult.data.encoded files/adult3.data.encoded: 2.192521333694458
+files/adult4.data.encoded files/adult3.data.encoded: 3.234921932220459
+
+Total time: 22.412089109420776
+-----------------------------------------------------------------------
+files/adult2.data.encoded files/adult5.data.encoded: 1.9391977787017822
+
+1967files/adult2.data.encoded files/adult.data.encoded: 2.0004210472106934
+
+1971files/adult2.data.encoded files/adult4.data.encoded: 2.0036780834198
+
+1967files/adult2.data.encoded files/adult3.data.encoded: 2.000443935394287
+
+1967files/adult5.data.encoded files/adult.data.encoded: 2.2725670337677
+
+1977files/adult5.data.encoded files/adult4.data.encoded: 2.218810796737671
+
+1973files/adult5.data.encoded files/adult3.data.encoded: 2.2325010299682617
+
+1972files/adult.data.encoded files/adult4.data.encoded: 2.2190442085266113
+
+1977files/adult.data.encoded files/adult3.data.encoded: 2.1951420307159424
+
+1976files/adult4.data.encoded files/adult3.data.encoded: 2.2527339458465576
+
+1972
+Total time: 21.420936107635498
+-----------------------------------------------------------------------
