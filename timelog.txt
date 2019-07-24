@@ -126,3 +126,14 @@ files/adult2.data.encoded files/adult5.data.encoded: 1.9391977787017822
 1972
 Total time: 21.420936107635498
 -----------------------------------------------------------------------
+test.data.encoded test2.data.encoded: 0.00011968612670898438
+test.data.encoded test2.data.encoded: 4.673004150390625e-05
+adult.data.encoded adult2.data.encoded: 2.278604030609131
+adult.data.encoded adult2.data.encoded: 2.4004430770874023
+adult.data.encoded adult2.data.encoded: 8.131246089935303
+adult.data.encoded adult2.data.encoded: 8.502513885498047
+adult2.data.encoded adult.data.encoded: 2.303314208984375
+test.data.encoded test2.data.encoded: 4.38690185546875e-05
+test.data.encoded test2.data.encoded: 0.0016019344329833984
+test.data.encoded test2.data.encoded: 0.0003421306610107422
+test2.data.encoded adult.data.encoded: 0.02642989158630371

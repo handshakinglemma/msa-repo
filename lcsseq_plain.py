@@ -33,12 +33,8 @@ def lcs(file1, file2):
 
     t2 = time.time()
     log_time(file1, file2, t2 - t1)
-    return result
 
-def enseq_file(filename, file, lcs):
-    seq_list = []
-    with open(filename + '.seq', 'w') as seqfile:
-        seqfile.write()
+    return result
 
 def read_file(filename):
     file = open(filename, 'rb')
@@ -47,7 +43,7 @@ def read_file(filename):
     return str(content)
 
 def write_file(filename, content):
-    file = open(filename, 'wb')
+    file = open(filename, 'ab')
 
     for pair in content:
         file.write(pair)
