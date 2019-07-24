@@ -5,7 +5,10 @@ from random import choice
 
 def get_files():
 	path = sys.argv[1]
-	files = os.listdir(path)
+	if os.path.isdir(path):
+		files = os.listdir(path)
+	elif os.path.isfile(path):
+		files = [path]
 	encoded_files = []
 	for file in files:
 		if '.encoded' in file:
@@ -20,36 +23,30 @@ def pick(flist):
 	flist.remove(file)
 	return file
 
+def enseq(flist):
+	if len(flist) <= 1:
+		return
+	else:
+		file1 = pick(flist)
+		file2 = pick(flist)
+		compare(file1, file2)
+		enseq(flsit)
+		return
+
 def inital(flist):
 
 	with open(db, 'r') as sequences_file:
 		sequences = sequences_file.readlines()
 
 	if len(flist) <= 1:
-		
-	elif len(flist) == 2:
-		result = compare(flist[0], flist[1])
-		with open('SequenceDB', 'a') as seqfile:
-			seqfile.write(result + '\n')
 		return
-	elif len(flist) % 3 == 0:
-		file_groups = []
-		group = []
-		for index, file in enumerate(flist, 1):
-			group.append(file)
-			if index % 3 == 0:
-				file_groups.append(group)
-				group = []
-		print(file_groups)
-	elif len(flist) % 2 == 0:
-		file_groups = []
-		group = []
-		for index, file in enumerate(flist, 1):
-			group.append(file)
-			if index % 2 == 0:
-				file_groups.append(group)
-				group = []
-		print(file_groups)
+		
+	else:
+		file1 = pick(flist)
+		file2 = pick(flist)
+		compare(file1, file2)
+		initial(flsit)
+		return
 
 		#result = compare(compare(flist[0], flist[1]), flist[2])
 
