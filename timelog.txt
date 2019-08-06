@@ -137,3 +137,4 @@ test.data.encoded test2.data.encoded: 4.38690185546875e-05
 test.data.encoded test2.data.encoded: 0.0016019344329833984
 test.data.encoded test2.data.encoded: 0.0003421306610107422
 test2.data.encoded adult.data.encoded: 0.02642989158630371
+adult.data.encoded adult2.data.encoded: 2.2573349475860596

@@ -29,10 +29,6 @@ def encode(inputFile, outputFile, commonFile, windowSize=3, polynomial=283): #co
     common_chunk_dict = get_chunk_info(commonFile) #runs get_chunk_info to get a dictionary of chunks and hashes, common_chunk_dict[hash] = chunk
     org_chunk_dict, org_chunk_lst = chunk(inputFile, windowSize, polynomial) #converts input file into chunks. org_chunk_dict contains unique chunks, addressed as their hashes
     #org_chunk_lst contains the order of the chunks
-    
-    sorted_chunk_list = org_chunk_lst.copy()
-    sorted_chunk_list.sort()
-
     encodedFile = open(outputFile, 'wb')
     all_chunks_file = open(commonFile, 'ab')
     counter = len(common_chunk_dict)
@@ -44,29 +40,8 @@ def encode(inputFile, outputFile, commonFile, windowSize=3, polynomial=283): #co
             all_chunks_file.write(bytePair + org_chunk_dict[pair])
             common_chunk_dict[bytePair] = org_chunk_dict[pair]
             counter += 1
-
-    with open('HashDB', 'wb') as hashfile:
-        counter = 0
-        for pair in sorted_chunk_list:
-            bytePair = pair[0] + pair[1].to_bytes(3, 'big')
-            hashfile.write(bytePair)
-            counter += 1
-            if counter == 28:
-                break
-
     if counter > 2 ** 24:
         raise("TOO MANY CHUNKS CANNOT REPRESENT IN 3 BYTES")
-
-# EM 19/07/30
-def process(pathname):
-    print(pathname)
-    if os.path.isdir(pathname):
-        for filename in os.listdir(pathname):
-            process(pathname + '/' + filename)
-    elif os.path.isfile(pathname):
-        if "encoded" not in pathname and "decoded" not in pathname and "desktop.ini" not in pathname:
-            encode(pathname, pathname +  ".encoded", sys.argv[2])
-    
 
 if __name__ == "__main__":
     if len(sys.argv) > 4:
@@ -74,10 +49,6 @@ if __name__ == "__main__":
     else:
         maskSize = 6
     input = sys.argv[1]
-    prefix = os.getcwd()
-    process(prefix + '/' + input)
-    '''
-    # EM 19/07/30
     if os.path.isdir(input):
         for fileName in os.listdir(input):
             print(fileName)
@@ -85,4 +56,3 @@ if __name__ == "__main__":
                 encode(os.getcwd() + "/" + input + "/" + fileName, os.getcwd() + "/" + input + "/" + fileName +  ".encoded", sys.argv[2], maskSize)
     else:
         encode(input, input + ".encoded", sys.argv[2])
-    '''

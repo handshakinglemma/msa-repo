@@ -9,3 +9,5 @@ fastlsa.c
 ChunksDB
 SequenceDB
 workingsequence
+.DS_Store
+linux-*/
