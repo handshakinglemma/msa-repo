@@ -1,4 +1,5 @@
 import sys
+import time
 
 def read_encoded(inputFile):
     data = open(inputFile, 'rb').read()
@@ -34,4 +35,6 @@ def decode_to_file(inputFile, outputFile, commonFile):
         file.write(chunk_dict[pair])
 
 if __name__ == "__main__":
+    start = time.clock()
     decode_to_file(sys.argv[1] + ".encoded", sys.argv[1] + ".decoded", sys.argv[2])
+    print("Time to decode:", time.clock() - start)

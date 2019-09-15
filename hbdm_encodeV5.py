@@ -69,6 +69,7 @@ def process(pathname):
     
 
 if __name__ == "__main__":
+    start = time.clock()
     if len(sys.argv) > 4:
         maskSize = int(sys.argv[4])
     else:
@@ -76,6 +77,7 @@ if __name__ == "__main__":
     input = sys.argv[1]
     prefix = os.getcwd()
     process(prefix + '/' + input)
+    print("Time to encode:", time.clock() - start)
     '''
     # EM 19/07/30
     if os.path.isdir(input):

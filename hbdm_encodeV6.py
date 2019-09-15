@@ -44,6 +44,7 @@ def encode(inputFile, outputFile, commonFile, windowSize=3, polynomial=283): #co
         raise("TOO MANY CHUNKS CANNOT REPRESENT IN 3 BYTES")
 
 if __name__ == "__main__":
+    start = time.clock()
     if len(sys.argv) > 4:
         maskSize = int(sys.argv[4])
     else:
@@ -56,3 +57,4 @@ if __name__ == "__main__":
                 encode(os.getcwd() + "/" + input + "/" + fileName, os.getcwd() + "/" + input + "/" + fileName +  ".encoded", sys.argv[2], maskSize)
     else:
         encode(input, input + ".encoded", sys.argv[2])
+    print("Time to encode:", time.clock() - start)
